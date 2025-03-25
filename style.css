@@ -21,7 +21,7 @@ body {
 
 /* Header */
 .header {
-  background: #4a90e2;
+  background: #255c9b;
   color: #fff;
   padding: 20px 0;
   text-align: center;
@@ -80,7 +80,7 @@ body {
   background: #fff;
   border: 1px solid #ddd;
   padding: 15px;
-  width: calc(50% - 20px);
+  width: calc(33.33% - 20px);
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
   text-align: center;
 }
@@ -157,12 +157,18 @@ button[type="submit"]:hover {
 /* Адаптивная верстка */
 @media (max-width: 768px) {
   .portfolio-item {
-    width: 100%;
+    width: calc(50% - 20px);
   }
   .nav ul {
     flex-direction: column;
   }
   .nav ul li {
     margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-item {
+    width: 100%;
   }
 }
