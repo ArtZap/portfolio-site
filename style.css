@@ -119,6 +119,52 @@ body {
   margin-bottom: 20px;
 }
 
+/* Testimonials Section */
+.testimonials {
+  padding: 40px 0;
+  background: #f4f4f4;
+}
+
+.testimonials h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.testimonials p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.testimonial-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.testimonial {
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: calc(33.33% - 40px);
+  /* три отзыва в ряд на больших экранах */
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.testimonial h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.testimonial p {
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #555;
+}
+
 /* Portfolio Section */
 .portfolio {
   padding: 40px 0;
@@ -242,10 +288,20 @@ button[type="submit"]:hover {
   .nav ul li {
     margin: 10px 0;
   }
+
+  .testimonial {
+    width: calc(50% - 40px);
+    /* два отзыва в ряд на больших экранах */
+  }
 }
 
 @media (max-width: 480px) {
   .portfolio-item {
     width: 100%;
+  }
+
+  .testimonial {
+    width: 100%;
+    /* один отзыв в ряд на больших экранах */
   }
 }
