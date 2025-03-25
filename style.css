@@ -65,6 +65,10 @@ body {
   border-radius: 10px;
 }
 
+img {
+  border-radius: 10px;
+}
+
 .portfolio h2 {
   text-align: center;
   margin-bottom: 30px;
