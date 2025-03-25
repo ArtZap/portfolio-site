@@ -1,0 +1,168 @@
+/* Сброс стилей */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Контейнер для выравнивания контента */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Header */
+.header {
+  background: #4a90e2;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.header h1 {
+  margin-bottom: 10px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav ul li {
+  margin: 0 15px;
+}
+
+.nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* About Section */
+.about {
+  padding: 40px 0;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.about h2 {
+  margin-bottom: 20px;
+}
+
+/* Portfolio Section */
+.portfolio {
+  padding: 40px 0;
+}
+
+.portfolio h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.portfolio-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  width: calc(50% - 20px);
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.portfolio-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact {
+  padding: 40px 0;
+  background: #f4f4f4;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group input:invalid,
+.form-group textarea:invalid {
+  border-color: red;
+}
+
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #4a90e2;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: #357ab7;
+}
+
+/* Footer */
+.footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Адаптивная верстка */
+@media (max-width: 768px) {
+  .portfolio-item {
+    width: 100%;
+  }
+  .nav ul {
+    flex-direction: column;
+  }
+  .nav ul li {
+    margin: 10px 0;
+  }
+}

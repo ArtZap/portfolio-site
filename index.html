@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description"
+      content="Визитка репетитора по фронтенду с портфолио и формой обратной связи">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Визитка репетитора</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <h1>Иван Иванов</h1>
+        <p>Репетитор по фронтенду</p>
+        <nav class="nav">
+          <ul>
+            <li><a href="#about">О себе</a></li>
+            <li><a href="#portfolio">Портфолио</a></li>
+            <li><a href="#contact">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2>О себе</h2>
+        <p>Я помогаю освоить веб-разработку с упором на фронтенд. Имею
+          многолетний опыт преподавания и работы в индустрии.</p>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <h2>Портфолио</h2>
+        <div class="portfolio-items">
+          <article class="portfolio-item">
+            <img src="https://via.placeholder.com/300x200" alt="Проект 1">
+            <h3>Проект 1</h3>
+            <p>Описание проекта. Реализация адаптивного интерфейса, использованы
+              современные технологии.</p>
+          </article>
+          <article class="portfolio-item">
+            <img src="https://via.placeholder.com/300x200" alt="Проект 2">
+            <h3>Проект 2</h3>
+            <p>Описание проекта. Кроссбраузерная верстка и оптимизация под
+              мобильные устройства.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section with Form -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Контакты</h2>
+        <form action="#" method="post" novalidate>
+          <div class="form-group">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required
+              placeholder="Ваше имя">
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required
+              placeholder="example@mail.com">
+          </div>
+          <div class="form-group">
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" required
+              placeholder="Ваше сообщение"></textarea>
+          </div>
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Иван Иванов. Все права защищены.</p>
+      </div>
+    </footer>
+  </body>
+</html>
