@@ -13,7 +13,7 @@ body {
 
 /* Hero Section */
 .hero {
-  background-color: #000;
+  background-color: #201f1f;
   color: #fff;
   padding: 60px 0;
 }
@@ -47,7 +47,7 @@ body {
 
 .btn-cta {
   display: inline-block;
-  background-color: #28a745;
+  background-color: #222968;
   color: #fff;
   padding: 15px 30px;
   text-decoration: none;
@@ -57,7 +57,7 @@ body {
 }
 
 .btn-cta:hover {
-  background-color: #218838;
+  background-color: #363c72;
 }
 
 .hero-image {
@@ -82,7 +82,7 @@ body {
 
 /* Header */
 .header {
-  background: #255c9b;
+  background-color: #201f1f;
   color: #fff;
   padding: 20px 0;
   text-align: center;
