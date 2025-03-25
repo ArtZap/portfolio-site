@@ -11,6 +11,67 @@ body {
   color: #333;
 }
 
+/* Hero Section */
+.hero {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 0;
+}
+
+.hero-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1 1 400px;
+  margin-right: 20px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.btn-cta {
+  display: inline-block;
+  background-color: #28a745;
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-cta:hover {
+  background-color: #218838;
+}
+
+.hero-image {
+  flex: 0 0 300px;
+  text-align: center;
+}
+
+.hero-image img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 /* Контейнер для выравнивания контента */
 .container {
   width: 90%;
@@ -86,7 +147,7 @@ img {
   border: 1px solid #ddd;
   padding: 15px;
   width: calc(33.33% - 20px);
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
@@ -161,12 +222,24 @@ button[type="submit"]:hover {
 
 /* Адаптивная верстка */
 @media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
   .portfolio-item {
     width: calc(50% - 20px);
   }
+
   .nav ul {
     flex-direction: column;
   }
+
   .nav ul li {
     margin: 10px 0;
   }
