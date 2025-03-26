@@ -174,8 +174,8 @@ body {
   }
 }
 
-/* Portfolio Section */
-.portfolio {
+/* Сourses Section */
+.courses {
   padding: 40px 0;
   border-radius: 10px;
 }
@@ -184,19 +184,19 @@ img {
   border-radius: 10px;
 }
 
-.portfolio h2 {
+.courses h2 {
   text-align: center;
   margin-bottom: 30px;
 }
 
-.portfolio-items {
+.courses-items {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
 }
 
-.portfolio-item {
+.courses-item {
   background: #fff;
   border: 1px solid #ddd;
   padding: 15px;
@@ -205,20 +205,20 @@ img {
   text-align: center;
 }
 
-.portfolio-item img {
+.courses-item img {
   max-width: 100%;
   height: auto;
   margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
-  .portfolio-item {
+  .courses-item {
     width: calc(50% - 20px);
   }
 }
 
 @media (max-width: 480px) {
-  .portfolio-item {
+  .courses-item {
     width: 100%;
   }
 }
