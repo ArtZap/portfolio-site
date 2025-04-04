@@ -211,7 +211,9 @@ body {
 .course-description {
   font-size: 1rem;
   line-height: 1.5;
-  background-color: #2b2e42;
+  background-color: #1a1b1f;
+  padding: 40px 0;
+  border-color: #ffffff;
   border-radius: 10px;
 }
 
