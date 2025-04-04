@@ -217,14 +217,13 @@ h2 {
   line-height: 1.5;
   background-color: #1a1b1f;
   padding: 40px 0;
-  border-color: #ffffff;
+  border: 1.5px solid #ddd;
   border-radius: 10px;
 }
 
 .course-description h3 {
   margin-bottom: 10px;
   font-size: 1.5rem;
-  color: #f4f4f4;
 }
 
 @media (max-width: 768px) {
