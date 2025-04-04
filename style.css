@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border-radius: 10px;
 }
 
 body {
@@ -89,7 +90,7 @@ body {
   color: #fff;
   padding: 15px 30px;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 10px;
   font-weight: bold;
   transition: background 0.3s ease;
 }
@@ -198,11 +199,16 @@ img {
 
 .courses-item {
   background: #fff;
-  border: 1px solid #ddd;
+  border: 2px solid #ddd;
+  border-radius: 10px;
   padding: 15px;
   width: calc(33.33% - 20px);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:column-reverse;
+  align-content:center;
 }
 
 .courses-item img {
