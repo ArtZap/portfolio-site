@@ -208,7 +208,7 @@ img {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  flex-direction:column;
+  flex-direction:row;
   align-content:center;
   padding: 8px;
 }
