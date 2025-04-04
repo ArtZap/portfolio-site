@@ -206,7 +206,10 @@ img {
   width: calc(33.33% - 20px);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   text-align: center;
-  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:column;
+  align-content:center;
   padding: 8px;
 }
 
