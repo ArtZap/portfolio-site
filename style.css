@@ -11,6 +11,10 @@ body {
   color: #333;
 }
 
+h2 {
+  font-size: 1.5rem;
+}
+
 /* Header */
 .header {
   background-color: #201f1f;
