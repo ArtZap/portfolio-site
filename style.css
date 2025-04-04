@@ -178,56 +178,48 @@ body {
 /* Сourses Section */
 .courses {
   padding: 40px 0;
-  border-radius: 10px;
 }
 
-img {
-  border-radius: 10px;
-}
 
 .courses h2 {
   text-align: center;
   margin-bottom: 30px;
 }
 
-.courses-items {
-  display: flex;
-  flex-wrap: wrap;
+/* Табличная структура курсов */
+.courses-table {
+  display: grid;
   gap: 20px;
-  justify-content: center;
 }
 
-.courses-item {
-  font-size: 20px;
-  background: #fff;
-  border: 2px solid #ddd;
+.course-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Стили для блока с изображением */
+.course-image img {
+  width: 100%;
   border-radius: 10px;
-  padding: 15px;
-  width: calc(33.33% - 20px);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction:row;
-  align-content:center;
-  padding: 8px;
 }
 
-.courses-item img {
-  max-width: 100%;
-  height: auto;
+/* Стили для описания курса */
+.course-description {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.course-description h3 {
   margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #222968;
 }
 
 @media (max-width: 768px) {
-  .courses-item {
-    width: calc(50% - 20px);
-  }
-}
-
-@media (max-width: 480px) {
-  .courses-item {
-    width: 100%;
+  .course-row {
+    grid-template-columns: 1fr;
   }
 }
 
