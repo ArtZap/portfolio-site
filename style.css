@@ -201,7 +201,7 @@ body {
 
 /* Стили для блока с изображением */
 .course-image img {
-  width: 80%;
+  width: 90%;
   margin: auto;
   display: block;
   border-radius: 10px;
