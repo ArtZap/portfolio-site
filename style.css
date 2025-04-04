@@ -198,6 +198,7 @@ img {
 }
 
 .courses-item {
+  font-size: 20px;
   background: #fff;
   border: 2px solid #ddd;
   border-radius: 10px;
@@ -205,10 +206,8 @@ img {
   width: calc(33.33% - 20px);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction:column-reverse;
-  align-content:center;
+  border: 1px solid black;
+  padding: 8px;
 }
 
 .courses-item img {
