@@ -1,4 +1,4 @@
-a[ id= "about" ]:target ~ #main article.panel {
+/* a[ id= "about" ]:target ~ #main article.panel {
   -webkit-transform: translateY( 0px);
   transform: translateY( 0px );
 }
@@ -10,6 +10,10 @@ a[ id= "testimonials" ]:target ~ #main article.panel {
 a[ id= "contact" ]:target ~ #main article.panel {
   -webkit-transform: translateY( -1000px );
   transform: translateY( -1000px );
+} */
+
+*, html {
+  scroll-behavior: smooth !important;
 }
 
 @media (prefers-reduced-motion: no-preference) {
