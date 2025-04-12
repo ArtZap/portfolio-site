@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   color: #fff;
@@ -38,6 +42,12 @@ body {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 @media (max-width: 768px) {
