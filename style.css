@@ -44,12 +44,6 @@ body {
   font-weight: bold;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-}
-
 @media (max-width: 768px) {
   .nav ul {
     flex-direction: column;
