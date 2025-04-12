@@ -1,5 +1,15 @@
-#about {
-  scroll-behavior: smooth;
+a[ id= "about" ]:target ~ #main article.panel {
+  -webkit-transform: translateY( 0px);
+  transform: translateY( 0px );
+}
+
+a[ id= "testimonials" ]:target ~ #main article.panel {
+  -webkit-transform: translateY( -500px );
+  transform: translateY( -500px );
+}
+a[ id= "contact" ]:target ~ #main article.panel {
+  -webkit-transform: translateY( -1000px );
+  transform: translateY( -1000px );
 }
 
 @media (prefers-reduced-motion: no-preference) {
