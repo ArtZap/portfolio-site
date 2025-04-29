@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rocket Pharm</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="images/site_icon.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header id="site-header">
@@ -22,17 +24,22 @@
 
     <main>
       <section id="hero">
-        <h2>Инновации в фармацевтике с космической скоростью</h2>
+        <!-- GIF перед текстом -->
+        <div class="hero-content">
+          <div class="gif-wrapper">
+            <img src="images/raketa.gif" alt="Rocket GIF" class="hero-gif" />
+          </div>
+          <h2>Инновации в фармацевтике с космической скоростью</h2>
+        </div>
       </section>
 
       <section id="gallery" class="gallery-section">
         <h2>Галерея продукции</h2>
         <div class="gallery">
-          <!-- Примеры изображений -->
-          <img src="img/product1.jpg" alt="Продукт 1" />
-          <img src="img/product2.jpg" alt="Продукт 2" />
-          <img src="img/product3.jpg" alt="Продукт 3" />
-          <img src="img/product4.jpg" alt="Продукт 4" />
+          <img src="images/product1.jpg" alt="Продукт 1" />
+          <img src="images/product2.jpg" alt="Продукт 2" />
+          <img src="images/product3.jpg" alt="Продукт 3" />
+          <img src="images/product4.jpg" alt="Продукт 4" />
         </div>
       </section>
 
@@ -76,7 +83,7 @@
 
     <!-- SVG-элемент для анимации -->
     <svg id="animated-logo" width="100" height="100" viewBox="0 0 100 100">
-      <path id="rocket-path" d="M10,90 L50,10 L90,90 Z" stroke="#0057B8"
+      <path id="rocket-path" d="M10,90 L50,10 L90,90 Z" stroke="#b30000"
         stroke-width="4" fill="none" />
     </svg>
 
