@@ -100,17 +100,14 @@ document.addEventListener('DOMContentLoaded', () => {
     updateTimer();
   
     /* 7. Фиксированное меню */
-    document.addEventListener('DOMContentLoaded', () => {
-      const header = document.getElementById('site-header');
-      const hero = document.getElementById('hero');
-      window.addEventListener('scroll', () => {
-        if (window.scrollY > hero.offsetHeight) {
-          header.classList.add('fixed');
-        } else {
-          header.classList.remove('fixed');
-        }
-      });
-    });
+    const header = document.getElementById('site-header');
+    const hero = document.getElementById('hero');
+    const observer = new IntersectionObserver(entries => {
+      entries[0].isIntersecting
+        ? header.classList.remove('fixed')
+        : header.classList.add('fixed');
+    }, { rootMargin: '0px 0px 0px 0px' });
+    observer.observe(hero);
   
     /* 8. Анимация SVG */
     const rocketPath = document.getElementById('rocket-path');
