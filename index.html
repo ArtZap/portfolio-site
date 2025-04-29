@@ -1,173 +1,85 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8">
-    <meta name="description"
-      content="Rocket Pharm - единственная в России компания, представляющая уникальное.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rocket Pharm</title>
-    <link rel="icon" href="images/site_icon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Header -->
-    <header class="header">
+    <header id="site-header">
       <div class="container">
-        <nav class="nav">
+        <h1>Rocket Pharm</h1>
+        <nav id="main-nav">
           <ul>
-            <li><a href="#general">Главная</a></li>
-            <li><a href="#about">О компании</a></li>
-            <li><a href="#products">Продукция</a></li>
-            <li><a href="#cliens">Наши клиенты</a></li>
+            <li><a href="#gallery">Галерея</a></li>
             <li><a href="#contact">Контакты</a></li>
+            <li><a href="#countdown">Событие</a></li>
           </ul>
         </nav>
-        <section class="hero">
-        </section>
       </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-      <div class="container">
-        <div class="about-content">
-          <h2>О себе</h2>
-          <div class="about-text">
-            <p>Я Алексей Петров — опытный репетитор, помогающий студентам и
-              школьникам быстро освоить сложные темы. Индивидуальный подход и
-              систематическое обучение — залог успеха.</p>
-          </div>
+    <main>
+      <section id="hero">
+        <h2>Инновации в фармацевтике с космической скоростью</h2>
+      </section>
+
+      <section id="gallery" class="gallery-section">
+        <h2>Галерея продукции</h2>
+        <div class="gallery">
+          <!-- Примеры изображений -->
+          <img src="img/product1.jpg" alt="Продукт 1" />
+          <img src="img/product2.jpg" alt="Продукт 2" />
+          <img src="img/product3.jpg" alt="Продукт 3" />
+          <img src="img/product4.jpg" alt="Продукт 4" />
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Courses Section -->
-    <section id="courses" class="courses">
-      <div class="container">
-        <h2>Курсы</h2>
-        <div class="courses-table">
-          <!-- Первая строка: Математика -->
-          <div class="course-row">
-            <div class="course-image">
-              <img src="images/math.png" alt="Математический проект">
-            </div>
-            <div class="course-description">
-              <h3>Математический анализ</h3>
-              <p>Курс охватывает глубокое изучение высшей математики с акцентом
-                на практические задания и интерактивные примеры. Вы научитесь
-                применять теоретические знания для решения сложных задач,
-                освоите методы аналитического мышления и научитесь видеть
-                закономерности в математических моделях. Программа включает
-                детальное рассмотрение тем алгебры, геометрии и анализа
-                функций.</p>
+      <section id="countdown">
+        <h2>До вручения диплома МФТИ осталось:</h2>
+        <div id="timer">00:00:00:00</div>
+      </section>
 
-            </div>
-          </div>
-          <!-- Вторая строка: Физика (описание слева, картинка справа) -->
-          <div class="course-row">
-            <div class="course-description">
-              <h3>Физика в действии</h3>
-              <p>Этот курс создан для тех, кто хочет понять законы природы через
-                практический опыт. Мы рассматриваем ключевые физические
-                концепции, проводим симуляции экспериментов и обсуждаем реальные
-                примеры из жизни. Вы узнаете, как применять физические законы
-                для анализа явлений, научитесь пользоваться современными
-                инструментами моделирования и увидите, как теория превращается в
-                практические навыки.</p>
-            </div>
-            <div class="course-image">
-              <img src="images/phisic.png" alt="Физический проект">
-            </div>
-          </div>
-          <!-- Третья строка: Программирование -->
-          <div class="course-row">
-            <div class="course-image">
-              <img src="images/proga.png" alt="Программный проект">
-            </div>
-            <div class="course-description">
-              <h3>Программирование</h3>
-              <p>Курс по программированию предлагает подробное изучение языков
-                программирования и современных технологий разработки. Вы будете
-                работать над реальными проектами, учиться строить алгоритмы и
-                создавать веб-приложения. Программа охватывает как базовые
-                принципы, так и продвинутые техники, что позволит вам уверенно
-                решать задачи в области разработки программного обеспечения.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      <section id="contact" class="contact-section">
+        <button id="open-feedback">Обратная связь</button>
+      </section>
+    </main>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
-      <div class="container">
-        <h2>Отзывы</h2>
-        <p>Ниже приведены некоторые отзывы от студентов и их родителей:</p>
-        <div class="testimonial-list">
-          <article class="testimonial">
-            <h3>Иван С.</h3>
-            <div class="hero-image">
-              <img src="images/boy1.png" alt="Фото парня">
-            </div>
-            <p>Занимался математикой с Петром. Очень понравился
-              структурированный подход, объясняет всё понятно и доступно.</p>
-          </article>
-          <article class="testimonial">
-            <h3>Мария К.</h3>
-            <div class="hero-image">
-              <img src="images/girl.png" alt="Фото девушки">
-            </div>
-            <p>Подготовка к ЕГЭ по физике прошла успешно, получила высокий балл.
-              Рекомендую!</p>
-          </article>
-          <article class="testimonial">
-            <h3>Андрей П.</h3>
-            <div class="hero-image">
-              <img src="images/boy2.png" alt="Фото парня">
-            </div>
-            <p>Брал уроки по программированию (JavaScript). Теперь пишу свои
-              проекты. Спасибо!</p>
-          </article>
-        </div>
-      </div>
-    </section>
+    <!-- Popup для увеличения изображений -->
+    <div id="img-popup" class="popup hidden">
+      <span class="close-popup">&times;</span>
+      <button class="nav-arrow left">&#9664;</button>
+      <img src alt />
+      <button class="nav-arrow right">&#9654;</button>
+    </div>
 
-    <!-- Contact Section with Form -->
-    <section id="contact" class="contact">
-      <div class="container">
-        <h2>Контакты</h2>
-        <form action="#" method="post">
-          <div class="form-group">
-            <label for="name">Имя:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              required
-              pattern="^[А-Яа-яЁё\s\-]+$"
-              title="Используйте только русские буквы, пробелы и дефисы"
-              placeholder="Ваше имя">
-          </div>
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required
-              placeholder="example@mail.com">
-          </div>
-          <div class="form-group">
-            <label for="message">Сообщение:</label>
-            <textarea id="message" name="message" required
-              placeholder="Ваше сообщение"></textarea>
-          </div>
-          <button type="submit">Отправить</button>
-        </form>
-      </div>
-    </section>
+    <!-- Popup обратной связи -->
+    <div id="feedback-popup" class="popup hidden">
+      <span class="close-popup">&times;</span>
+      <form id="feedback-form" action="https://example.com/submit" method="POST"
+        novalidate>
+        <h3>Оставьте сообщение</h3>
+        <label>Имя:<input type="text" name="name" required /></label>
+        <label>Телефон:<input type="text" name="phone" required /></label>
+        <label>Email:<input type="email" name="email" required /></label>
+        <label>Сообщение:<textarea name="message" required></textarea></label>
+        <button type="submit" id="submit-btn">Отправить</button>
+      </form>
+    </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <p>&copy; 2025 Алексей Петров. Все права защищены.</p>
-      </div>
-    </footer>
+    <!-- Одноразовый таймер-подсказка -->
+    <div id="promo-popup" class="promo hidden">
+      <span class="close-promo">&times;</span>
+      <p>Узнайте о наших новых исследованиях!</p>
+    </div>
+
+    <!-- SVG-элемент для анимации -->
+    <svg id="animated-logo" width="100" height="100" viewBox="0 0 100 100">
+      <path id="rocket-path" d="M10,90 L50,10 L90,90 Z" stroke="#0057B8"
+        stroke-width="4" fill="none" />
+    </svg>
+
+    <script src="script.js"></script>
   </body>
 </html>
