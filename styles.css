@@ -43,6 +43,15 @@ header {
   color: #fff;
   position: relative;
   z-index: 100;
+  transition: top 0.3s;
+}
+
+header.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 header .container {
@@ -78,6 +87,7 @@ nav a:hover {
 
 .hero-content {
   display: flex;
+  color: #fff;
   flex-direction: column;
   align-items: center;
   gap: 20px;
@@ -90,7 +100,7 @@ nav a:hover {
 }
 
 .hero-gif {
-  width: 200px;
+  width: 100%;
   height: auto;
   display: block;
 }
