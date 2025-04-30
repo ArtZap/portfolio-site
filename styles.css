@@ -78,7 +78,10 @@ nav a:hover {
 
 /* Герой */
 #hero {
+  height: 100vh;
   background-image: url('images/raketa.gif');
+  background-size: cover;
+  background-position: center;
   color: #fff;
   display: flex;
   align-items: center;
@@ -90,8 +93,20 @@ nav a:hover {
   display: flex;
   color: #fff;
   flex-direction: column;
-  align-items: end;
+  align-items: center;
   gap: 20px;
+}
+
+.gif-wrapper {
+  background: #be241c;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.hero-gif {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Блоки преимуществ */
