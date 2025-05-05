@@ -1,4 +1,8 @@
 /* Базовые стили */
+*, html {
+  scroll-behavior: smooth !important;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -81,10 +85,11 @@ nav a:hover {
 
 /* Герой */
 #hero {
-  height: 100vh;
-  background-image: url('images/titul_photo.jpg');
-  background-size: cover;
-  background-position: center;
+  height:100%;
+  width:100%;
+  background-image:url(images/titul_photo.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
   color: #fff;
   display: flex;
   align-items: center;
