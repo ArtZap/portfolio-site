@@ -22,7 +22,7 @@ body {
 }
 
 h2 {
-  color: #b30000;
+  color: #000;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -152,7 +152,7 @@ nav a:hover {
 }
 
 .prod-item h4 {
-  color: #b30000;
+  color: #000;
   margin-bottom: 10px;
   text-align: center;
 }
