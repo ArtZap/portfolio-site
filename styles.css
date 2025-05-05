@@ -23,6 +23,10 @@ h2 {
   text-align: center;
 }
 
+h2 .title-text {
+  color: #fff;
+}
+
 p {
   margin-bottom: 15px;
 }
