@@ -27,7 +27,7 @@
     <main>
       <!-- Геро-секция -->
       <section id="hero">
-        <div class="hero-content">
+        <div id="hero-content">
           <h2 id="title_text">Инновации в фармацевтике с космической
             скоростью</h2>
         </div>
@@ -58,16 +58,16 @@
           <h2>Почему мы</h2>
           <div class="features">
             <div class="feature-item">
-              <img src="images/icon-owl.png" alt="Сова" />
+              <img src="images/icon-owl.png" alt="Сова">
               <p>Уникальная экспертиза в основных товарных категориях
                 парафармацевтики</p>
             </div>
             <div class="feature-item">
-              <img src="images/icon-piggy.png" alt="Свинья-копилка" />
+              <img src="images/icon-piggy.png" alt="Свинья-копилка">
               <p>Лучшие цены на рынке и только нужный ассортимент</p>
             </div>
             <div class="feature-item">
-              <img src="images/icon-compass.png" alt="Часы/Компас" />
+              <img src="images/icon-compass.png" alt="Часы/Компас">
               <p>Работаем оперативно, гибко, точно</p>
             </div>
           </div>
@@ -82,17 +82,17 @@
           <h2>Выгоды СТМ</h2>
           <div class="features">
             <div class="feature-item">
-              <img src="images/icon-lamp.png" alt="Лампа-доллар" />
+              <img src="images/icon-lamp.png" alt="Лампа-доллар">
               <p>Зарабатывайте 150%...200%...300% при справедливой розничной
                 цене</p>
             </div>
             <div class="feature-item">
-              <img src="images/icon-rock.png" alt="Рок-пальцы" />
+              <img src="images/icon-rock.png" alt="Рок-пальцы">
               <p>Зарабатывайте сразу, не ждёте ретро‑бонусов. Теперь вы сами
                 производитель!</p>
             </div>
             <div class="feature-item">
-              <img src="images/icon-rocket-new.png" alt="Ракета" />
+              <img src="images/icon-rocket-new.png" alt="Ракета">
               <p>Эксклюзивная продукция, уникальное отличие от конкурентов</p>
             </div>
           </div>
@@ -104,17 +104,20 @@
         <div class="container">
           <h2>Галерея продукции</h2>
           <div class="gallery">
-            <img src="images/titul_photo.jpg" alt="Продукт 1">
-            <img src="images/titul_photo.jpg" alt="Продукт 2">
-            <img src="images/titul_photo.jpg" alt="Продукт 3">
-            <img src="images/titul_photo.jpg" alt="Продукт 4">
+            <img src="images/product-1.jpg" alt="Продукт 1">
+            <img src="images/product-2.jpg" alt="Продукт 2">
+            <img src="images/product-3.jpg" alt="Продукт 3">
+            <img src="images/product-4.JPG" alt="Продукт 4">
+            <img src="images/product-5.jpg" alt="Продукт 5">
+            <img src="images/product-6.jpg" alt="Продукт 6">
+            <img src="images/product-7.jpg" alt="Продукт 7">
           </div>
         </div>
       </section>
 
       <!-- Счетчик -->
       <section id="countdown">
-        <h2>До вручения диплома МФТИ осталось:</h2>
+        <h2>До конца акции осталось:</h2>
         <div id="timer">00:00:00:00</div>
       </section>
 
@@ -129,20 +132,23 @@
         </div>
       </section>
 
-      <!-- Кнопка обратной связи -->
-      <section id="feedback-section" class="contact-section">
+      <!-- Обратная связь -->
+      <section id="feedback-section" class="contact-section"
+        aria-labelledby="feedback-heading">
+        <h2 id="feedback-heading" class="visually-hidden">Обратная связь</h2>
         <div class="container">
           <button id="open-feedback">Обратная связь</button>
         </div>
       </section>
-
     </main>
 
     <!-- Popup для увеличения изображений -->
     <div id="img-popup" class="popup hidden">
       <span class="close-popup">&times;</span>
       <button class="nav-arrow left">&#9664;</button>
-      <img src alt="Увеличенное изображение">
+      <img
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+        alt="Увеличенное изображение">
       <button class="nav-arrow right">&#9654;</button>
     </div>
 
@@ -151,6 +157,7 @@
       <span class="close-popup">&times;</span>
       <form id="feedback-form" action="https://example.com/submit" method="POST"
         novalidate>
+        <h2 class="visually-hidden">Форма обратной связи</h2>
         <h3>Оставьте сообщение</h3>
         <label>Имя:<input type="text" name="name" required></label>
         <label>Телефон:<input type="text" name="phone" required></label>
