@@ -1,5 +1,6 @@
 /* Базовые стили */
-*, html {
+*,
+html {
   scroll-behavior: smooth !important;
 }
 
@@ -21,14 +22,14 @@ body {
   padding: 40px 20px;
 }
 
+.title-text {
+  color: #fff;
+}
+
 h2 {
   color: #000;
   margin-bottom: 20px;
   text-align: center;
-}
-
-.title-text {
-  color: #fff;
 }
 
 p {
@@ -85,11 +86,11 @@ nav a:hover {
 
 /* Герой */
 #hero {
-  height:100%;
-  width:100%;
-  background-image:url(images/titul_photo.jpg);
-  background-repeat:no-repeat;
-  background-size:cover;
+  height: 100%;
+  width: 100%;
+  background-image: url(images/titul_photo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #fff;
   display: flex;
   align-items: center;
