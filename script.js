@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* 6. Обратный отсчет */
   const timerEl = document.getElementById('timer');
-  const targetDate = new Date('2025-06-25T00:00:00');
+  const targetDate = new Date('2025-05-25T00:00:00');
   function updateTimer() {
     const diff = targetDate - new Date();
     if (diff <= 0) {
