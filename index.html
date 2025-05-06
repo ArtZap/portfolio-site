@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rocket Pharm</title>
     <!-- Favicon -->
-    <link rel="icon" href="images/site_icon.png" type="image/png" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="images/site_icon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header id="site-header">
@@ -27,9 +27,9 @@
     <main>
       <!-- Геро-секция -->
       <section id="hero">
-        <div id="hero-content">
-          <h1>Инновации в фармацевтике с космической
-            скоростью</h1>
+        <div class="hero-content">
+          <h2 id="title_text">Инновации в фармацевтике с космической
+            скоростью</h2>
         </div>
       </section>
 
@@ -38,17 +38,17 @@
         <div class="container">
           <h2>О компании</h2>
           <p>ООО «РОКЕТ ФАРМ» с 2016 года предоставляет ведущую экспертизу в
-            области создания, продвижения и продажи высоко-маржинальных
-            товаров (ВМТ) и собственных торговых марок (СТМ) на
-            фармацевтическом рынке.</p>
+            области создания, продвижения и продажи высоко-маржинальных товаров
+            (ВМТ) и собственных торговых марок (СТМ) на фармацевтическом
+            рынке.</p>
           <p>Мы сотрудничаем с основными крупными контрактными площадками и
             производителями аптечного ассортимента и предлагаем готовый
             сбалансированный ассортимент СТМ и ВМТ любой региональной аптечной
             сети, оптовику, дистрибьютору.</p>
           <p>Наша продукция – только лидеры товарных категорий, проверенные
             временем и большой выборкой, продукция с высокой наценкой и
-            оборачиваемостью. Без избыточного ассортимента, без обязательств
-            по объёмам, без отложенных ретро‑бонусов.</p>
+            оборачиваемостью. Без избыточного ассортимента, без обязательств по
+            объёмам, без отложенных ретро‑бонусов.</p>
         </div>
       </section>
 
@@ -99,21 +99,22 @@
         </div>
       </section>
 
+      <!-- Галерея продукции -->
       <section id="products" class="gallery-section">
-        <h2>Галерея продукции</h2>
-        <div class="gallery">
-          <img src="images/product-1.jpg" alt="Продукт 1" />
-          <img src="images/product-2.jpg" alt="Продукт 2" />
-          <img src="images/product-3.jpg" alt="Продукт 3" />
-          <img src="images/product-4.JPG" alt="Продукт 4" />
-          <img src="images/product-5.jpg" alt="Продукт 5" />
-          <img src="images/product-6.jpg" alt="Продукт 6" />
-          <img src="images/product-7.jpg" alt="Продукт 7" />
+        <div class="container">
+          <h2>Галерея продукции</h2>
+          <div class="gallery">
+            <img src="images/titul_photo.jpg" alt="Продукт 1">
+            <img src="images/titul_photo.jpg" alt="Продукт 2">
+            <img src="images/titul_photo.jpg" alt="Продукт 3">
+            <img src="images/titul_photo.jpg" alt="Продукт 4">
+          </div>
         </div>
       </section>
 
+      <!-- Счетчик -->
       <section id="countdown">
-        <h2>До конца акции осталось:</h2>
+        <h2>До вручения диплома МФТИ осталось:</h2>
         <div id="timer">00:00:00:00</div>
       </section>
 
@@ -128,29 +129,32 @@
         </div>
       </section>
 
-      <section id="contact" class="contact-section">
-        <button id="open-feedback">Обратная связь</button>
+      <!-- Кнопка обратной связи -->
+      <section id="feedback-section" class="contact-section">
+        <div class="container">
+          <button id="open-feedback">Обратная связь</button>
+        </div>
       </section>
+
     </main>
 
     <!-- Popup для увеличения изображений -->
     <div id="img-popup" class="popup hidden">
       <span class="close-popup">&times;</span>
       <button class="nav-arrow left">&#9664;</button>
-      <img src alt />
+      <img src alt="Увеличенное изображение">
       <button class="nav-arrow right">&#9654;</button>
     </div>
 
     <!-- Popup обратной связи -->
     <div id="feedback-popup" class="popup hidden">
       <span class="close-popup">&times;</span>
-      <form id="feedback-form" action="https://example.com/submit"
-        method="POST"
+      <form id="feedback-form" action="https://example.com/submit" method="POST"
         novalidate>
         <h3>Оставьте сообщение</h3>
-        <label>Имя:<input type="text" name="name" required /></label>
-        <label>Телефон:<input type="text" name="phone" required /></label>
-        <label>Email:<input type="email" name="email" required /></label>
+        <label>Имя:<input type="text" name="name" required></label>
+        <label>Телефон:<input type="text" name="phone" required></label>
+        <label>Email:<input type="email" name="email" required></label>
         <label>Сообщение:<textarea name="message" required></textarea></label>
         <button type="submit" id="submit-btn">Отправить</button>
       </form>
@@ -165,7 +169,7 @@
     <!-- SVG-элемент для анимации -->
     <svg id="animated-logo" width="100" height="100" viewBox="0 0 100 100">
       <path id="rocket-path" d="M10,90 L50,10 L90,90 Z" stroke="#b30000"
-        stroke-width="4" fill="none" />
+        stroke-width="4" fill="none"></path>
     </svg>
 
     <script src="script.js"></script>
