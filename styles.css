@@ -14,6 +14,7 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background: #fff;
+  padding-top: 80px;
 }
 
 .container {
@@ -22,7 +23,8 @@ body {
   padding: 40px 20px;
 }
 
-.title-text {
+
+.white-title-text {
   color: #fff;
 }
 
@@ -49,9 +51,11 @@ p {
 header {
   background: #ee3124;
   color: #fff;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 100;
-  transition: top 0.3s;
 }
 
 header.fixed {
@@ -86,16 +90,17 @@ nav a:hover {
 
 /* Герой */
 #hero {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   background-image: url(images/titul_photo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 60px 0;
+  padding: 0;
 }
 
 .hero-content {
@@ -238,13 +243,14 @@ header.fixed {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #ee3124;
+  background: rgba(0, 0, 0, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
   opacity: 0;
   visibility: hidden;
   transition: opacity .3s ease;
+  z-index: 200;
 }
 
 .popup.active,
@@ -278,6 +284,7 @@ header.fixed {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 201;
 }
 
 .nav-arrow.left {

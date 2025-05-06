@@ -1,9 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
+
   /* 1. Галерея с попапом */
   const galleryImgs = document.querySelectorAll('.gallery img');
   const imgPopup = document.getElementById('img-popup');
   const popupImg = imgPopup.querySelector('img');
-  const arrows = { left: imgPopup.querySelector('.nav-arrow.left'), right: imgPopup.querySelector('.nav-arrow.right') };
+  const arrows = {
+    left: imgPopup.querySelector('.nav-arrow.left'),
+    right: imgPopup.querySelector('.nav-arrow.right')
+  };
   let currentIndex = 0;
 
   function updatePopup() {
@@ -12,13 +16,17 @@ document.addEventListener('DOMContentLoaded', () => {
     arrows.right.classList.toggle('hidden', currentIndex === galleryImgs.length - 1);
   }
 
-  galleryImgs.forEach((img, idx) => img.addEventListener('click', () => {
-    currentIndex = idx;
-    updatePopup();
-    imgPopup.classList.add('active');
-  }));
+  galleryImgs.forEach((img, idx) =>
+    img.addEventListener('click', () => {
+      currentIndex = idx;
+      updatePopup();
+      imgPopup.classList.add('active');
+    })
+  );
 
-  imgPopup.querySelector('.close-popup').addEventListener('click', () => imgPopup.classList.remove('active'));
+  imgPopup.querySelector('.close-popup')
+    .addEventListener('click', () => imgPopup.classList.remove('active'));
+
   arrows.left.addEventListener('click', () => { currentIndex--; updatePopup(); });
   arrows.right.addEventListener('click', () => { currentIndex++; updatePopup(); });
 
@@ -34,15 +42,20 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('feedback-form');
   const submitBtn = document.getElementById('submit-btn');
 
-  feedbackBtn.addEventListener('click', () => feedbackPopup.classList.add('active'));
-  feedbackPopup.querySelector('.close-popup').addEventListener('click', () => feedbackPopup.classList.remove('active'));
+  feedbackBtn.addEventListener('click', () =>
+    feedbackPopup.classList.add('active'));
+  feedbackPopup.querySelector('.close-popup')
+    .addEventListener('click', () => feedbackPopup.classList.remove('active'));
 
   function validateField(field) {
     const val = field.value.trim();
     if (!val) return false;
-    if (field.name === 'phone') return /^\+?\d{7,15}$/.test(val);
-    if (field.name === 'email') return /^[\w.-]+@[\w.-]+\.[A-Za-z]{2,}$/.test(val);
-    if (field.name === 'message') return /^[A-Za-zА-Яа-я0-9\s.,!?]+$/.test(val);
+    if (field.name === 'phone')
+      return /^\+?\d{7,15}$/.test(val);
+    if (field.name === 'email')
+      return /^[\w.-]+@[\w.-]+\.[A-Za-z]{2,}$/.test(val);
+    if (field.name === 'message')
+      return /^[A-Za-zА-Яа-я0-9\s.,!?]+$/.test(val);
     return true;
   }
 
@@ -94,7 +107,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const targetDate = new Date('2025-06-25T00:00:00');
   function updateTimer() {
     const diff = targetDate - new Date();
-    if (diff <= 0) { timerEl.textContent = 'Событие наступило!'; clearInterval(timerInterval); return; }
+    if (diff <= 0) {
+      timerEl.textContent = 'Событие наступило!';
+      clearInterval(timerInterval);
+      return;
+    }
     const days = Math.floor(diff / (1000 * 60 * 60 * 24));
     const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
     const minutes = Math.floor((diff / (1000 * 60)) % 60);
@@ -128,4 +145,5 @@ document.addEventListener('DOMContentLoaded', () => {
     const y = (e.clientY / window.innerHeight) * 30 - 15;
     logo.style.transform = `translate(-50%, -50%) rotate(${x}deg)`;
   });
+
 });
