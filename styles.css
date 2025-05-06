@@ -23,11 +23,6 @@ body {
   padding: 40px 20px;
 }
 
-
-.white-title-text {
-  color: #fff;
-}
-
 h2 {
   color: #000;
   margin-bottom: 20px;
@@ -98,9 +93,9 @@ nav a:hover {
   background-position: center;
   color: #fff;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
-  padding: 0;
+  padding: 0 0 40px 0;
 }
 
 .hero-content {
