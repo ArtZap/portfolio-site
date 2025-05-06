@@ -2,6 +2,7 @@
 *,
 html {
   scroll-behavior: smooth !important;
+  scroll-padding-top: 80px !important;
 }
 
 * {
@@ -34,6 +35,17 @@ p {
 }
 
 /* Секции */
+.section-white,
+.section-red,
+#about,
+#why-us,
+#benefits,
+#contact,
+#products,
+#countdown {
+  scroll-margin-top: 100px;
+}
+
 .section-white {
   background: #fff;
 }
