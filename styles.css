@@ -439,15 +439,18 @@ header.fixed {
    ------------------------ */
 /* планшеты и небольшие десктопы */
 @media (max-width: 1024px) {
+
   /* уменьшаем отступы контейнера */
   .container {
     padding: 20px 15px;
   }
+
   /* подгоняем заголовки */
   h2 {
     font-size: 1.5rem;
     margin-bottom: 15px;
   }
+
   /* упрощаем геро-секцию */
   #hero {
     padding-bottom: 200px;
@@ -456,6 +459,7 @@ header.fixed {
 
 /* мобильные экраны */
 @media (max-width: 768px) {
+
   /* меню превращаем в колонку */
   nav ul {
     flex-direction: column;
@@ -469,9 +473,11 @@ header.fixed {
     display: none;
     /* по умолчанию скрыто */
   }
+
   nav ul.open {
     display: flex;
   }
+
   /* показываем «гамбургер» */
   #main-nav::before {
     content: '☰';
@@ -479,21 +485,26 @@ header.fixed {
     cursor: pointer;
     display: block;
   }
+
   /* героя и текст уменьшаем */
   #title_text {
     font-size: 1.4rem;
     padding: 0 10px;
   }
+
   /* сетка галереи в 2-колонки */
   .gallery {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
+
   /* блок преимуществ — одна колонка */
   .features {
     flex-direction: column;
     gap: 20px;
+    align-items: center;
   }
+
   /* подстраиваем кнопки */
   button,
   #submit-btn,
@@ -505,10 +516,12 @@ header.fixed {
 
 /* совсем узкие экраны */
 @media (max-width: 480px) {
+
   /* галерея в одну колонку */
   .gallery {
     grid-template-columns: 1fr;
   }
+
   /* ещё чуть меньше заголовки */
   h2 {
     font-size: 1.2rem;
