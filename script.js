@@ -122,27 +122,24 @@ document.addEventListener('DOMContentLoaded', () => {
   updateTimer();
 
   /* 7. Фиксированное меню */
-  document.addEventListener('DOMContentLoaded', () => {
-    const header = document.getElementById('site-header');
-    const hero   = document.getElementById('hero');
-    const body   = document.body;
-  
-    const observer = new IntersectionObserver(entries => {
-      if (entries[0].isIntersecting) {
-        header.classList.remove('visible', 'fixed');
-        body.style.paddingTop = '0';
-      } else {
-        header.classList.add('fixed');
-        requestAnimationFrame(() => header.classList.add('visible'));ашчув
-        body.style.paddingTop = `${header.offsetHeight}px`;
-      }
-    }, {
-      rootMargin: '-100px 0px 0px 0px'
-    });
-  
-    observer.observe(hero);
+  const header = document.getElementById('site-header');
+  const hero   = document.getElementById('hero');
+  const body   = document.body;
+
+  const observer = new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting) {
+      header.classList.remove('visible', 'fixed');
+      body.style.paddingTop = '0';
+    } else {
+      header.classList.add('fixed');
+      requestAnimationFrame(() => header.classList.add('visible'));
+      body.style.paddingTop = `${header.offsetHeight}px`;
+    }
+  }, {
+    rootMargin: '-100px 0px 0px 0px'
   });
-  
+
+  observer.observe(hero);
 
   /* 8. Анимация SVG */
   const rocketPath = document.getElementById('rocket-path');
