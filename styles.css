@@ -5,6 +5,10 @@ html {
   scroll-padding-top: 80px !important;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -36,6 +40,11 @@ p {
 /* Общие отступы между секциями */
 main>section {
   padding: 60px 0;
+}
+
+img, .container, .gallery, main > section {
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 /* Секции */
