@@ -123,8 +123,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* 7. Фиксированное меню */
   const header = document.getElementById('site-header');
-  const hero   = document.getElementById('hero');
-  const body   = document.body;
+  const hero = document.getElementById('hero');
+  const body = document.body;
 
   const observer = new IntersectionObserver(entries => {
     if (entries[0].isIntersecting) {
@@ -132,7 +132,9 @@ document.addEventListener('DOMContentLoaded', () => {
       body.style.paddingTop = '0';
     } else {
       header.classList.add('fixed');
-      requestAnimationFrame(() => header.classList.add('visible'));
+      requestAnimationFrame(() => {
+        header.classList.add('visible');
+      });
       body.style.paddingTop = `${header.offsetHeight}px`;
     }
   }, {
