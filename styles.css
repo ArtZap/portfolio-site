@@ -5,7 +5,8 @@ html {
   scroll-padding-top: 80px !important;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -42,11 +43,6 @@ main>section {
   padding: 60px 0;
 }
 
-img, .container, .gallery, main > section {
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
 /* Секции */
 .section-white,
 .section-red,
@@ -70,7 +66,7 @@ img, .container, .gallery, main > section {
 /* Шапка */
 header {
   background: #ee3124;
-  color: #fff;
+  color: #000;
   position: relative;
   width: 100%;
   z-index: 100;
