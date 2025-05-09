@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   promo.querySelector(".close-promo").addEventListener("click", () => {
     promo.classList.remove("active");
-    localStorage.setItem(promoKey, "true");
+    localStorage.setItem(promoKey, "false");
   });
 
   /* 6. Обратный отсчет */
