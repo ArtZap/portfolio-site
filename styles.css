@@ -52,7 +52,7 @@ main>section {
 #contact,
 #products,
 #countdown {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 60px;
 }
 
 .section-white {
@@ -66,7 +66,7 @@ main>section {
 /* Шапка */
 header {
   background: #ee3124;
-  color: #000;
+  color: #fff;
   position: relative;
   width: 100%;
   z-index: 100;
