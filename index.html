@@ -121,17 +121,6 @@
         <div id="timer">00:00:00:00</div>
       </section>
 
-      <!-- Контакты -->
-      <section id="contact" class="section-white">
-        <div class="container contact-info">
-          <h2>Контакты</h2>
-          <p>ООО «Рокет Фарм»<br>
-            129128, г. Москва, ул. Бажова, д. 18<br>
-            <a href="tel:+74952981119">+7 (495) 298-11-19</a><br>
-            <a href="mailto:info@rocket-pharm.ru">info@rocket-pharm.ru</a></p>
-        </div>
-      </section>
-
       <!-- Обратная связь -->
       <section id="feedback-section" class="contact-section"
         aria-labelledby="feedback-heading">
@@ -140,6 +129,17 @@
         </div>
       </section>
     </main>
+
+    <!-- Контакты -->
+    <section id="contact" class="section-white">
+      <div class="container contact-info">
+        <h2>Контакты</h2>
+        <p>ООО «Рокет Фарм»<br>
+          129128, г. Москва, ул. Бажова, д. 18<br>
+          <a href="tel:+74952981119">+7 (495) 298-11-19</a><br>
+          <a href="mailto:info@rocket-pharm.ru">info@rocket-pharm.ru</a></p>
+      </div>
+    </section>
 
     <!-- Popup для увеличения изображений -->
     <div id="img-popup" class="popup hidden">
@@ -166,17 +166,26 @@
       </form>
     </div>
 
-    <!-- Одноразовый таймер-подсказка -->
-    <div id="promo-popup" class="promo">
-      <span class="close-promo">&times;</span>
-      <p>Узнайте о наших новых исследованиях!</p>
-    </div>
-
     <!-- SVG-элемент для анимации -->
     <svg id="animated-logo" width="100" height="100" viewBox="0 0 100 100">
       <path id="rocket-path" d="M10,90 L50,10 L90,90 Z" stroke="#b30000"
         stroke-width="4" fill="none"></path>
     </svg>
+
+    <!-- Одноразовый таймер-подсказка -->
+    <div id="promo-popup" class="promo">
+      <div class="promo-content">
+        <button class="close-promo" aria-label="Закрыть окно">&times;</button>
+        <h2>Наши новые исследования</h2>
+        <p>Узнайте первыми о последних разработках Rocket Pharm:</p>
+        <ul>
+          <li>Нанотехнологичные капсулы нового поколения</li>
+          <li>Программа лояльности для партнёров</li>
+          <li>Специальные условия для первых 100 подписчиков</li>
+        </ul>
+        <button class="promo-btn" id="subscribe-btn">Подписаться</button>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
