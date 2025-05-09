@@ -103,6 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
   /* 5. Попап через 30 сек */
   const promo = document.getElementById("promo-popup");
   const promoKey = "promoClosed";
+  localStorage.setItem(promoKey, "false");
   if (!localStorage.getItem(promoKey)) {
     setTimeout(() => {
       promo.classList.add("active");
@@ -110,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   promo.querySelector(".close-promo").addEventListener("click", () => {
     promo.classList.remove("active");
-    localStorage.setItem(promoKey, "false");
+    localStorage.setItem(promoKey, "true");
   });
 
   /* 6. Обратный отсчет */
