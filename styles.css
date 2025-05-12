@@ -194,6 +194,7 @@ nav a:hover {
   border: none;
   border-radius: 8px;
   font-size: 1.1rem;
+  font-weight: bold;
   cursor: pointer;
   transition: background .3s;
 }
@@ -202,7 +203,7 @@ nav a:hover {
   background: #ffa59f;
   color: #000;
   font-weight: bold;
-  border: 2px solid #000;
+  border: 1.5px solid #000;
 }
 
 /* Галерея */
