@@ -182,9 +182,9 @@ nav a:hover {
 }
 
 /* Контакты: кнопка обратной связи */
-#feedback-button {
+#feedback-section {
   text-align: center;
-  padding: 50px auto 0;
+  padding-bottom: 0;
 }
 
 #open-feedback {
@@ -199,7 +199,9 @@ nav a:hover {
 }
 
 #open-feedback:hover {
-  background: #c6281c;
+  background: #d8928d;
+  color: #000;
+  border: #000;
 }
 
 /* Галерея */
