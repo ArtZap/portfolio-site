@@ -415,7 +415,7 @@ nav a:hover {
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  width: auto;
+  width: 800px;
   height: calc(100% - 40px);
   background: rgba(238, 49, 36, 0.1);
   border-radius: 8px;
