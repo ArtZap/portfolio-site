@@ -201,6 +201,7 @@ nav a:hover {
 #open-feedback:hover {
   background: #ffa59f;
   color: #000;
+  font-weight: bold;
   border: 2px solid #000;
 }
 
