@@ -30,6 +30,12 @@ document.addEventListener("DOMContentLoaded", () => {
     .querySelector(".close-popup")
     .addEventListener("click", () => imgPopup.classList.remove("active"));
 
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && imgPopup.classList.contains("active")) {
+      imgPopup.classList.remove("active");
+    }
+  });
+
   arrows.left.addEventListener("click", () => {
     currentIndex--;
     updatePopup();
@@ -37,12 +43,6 @@ document.addEventListener("DOMContentLoaded", () => {
   arrows.right.addEventListener("click", () => {
     currentIndex++;
     updatePopup();
-  });
-
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && imgPopup.classList.contains("active")) {
-      imgPopup.classList.remove("active");
-    }
   });
 
   /* 2 & 3 & 4. Форма обратной связи */
@@ -57,6 +57,12 @@ document.addEventListener("DOMContentLoaded", () => {
   feedbackPopup
     .querySelector(".close-popup")
     .addEventListener("click", () => feedbackPopup.classList.remove("active"));
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && feedbackPopup.classList.contains("active")) {
+      feedbackPopup.classList.remove("active");
+    }
+  });
 
   function validateField(field) {
     const val = field.value.trim();
@@ -177,6 +183,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const logo = document.getElementById("animated-logo");
     const x = (e.clientX / window.innerWidth) * 30 - 15;
     const y = (e.clientY / window.innerHeight) * 30 - 15;
-    logo.style.transform = `translate(-50%, -50%) rotate(${x}deg)`;
+    const angle = Math.atan2(x, y) * 180 / Math.PI;
+    logo.style.transform = `translate(-50%, -50%) rotate(${angle}deg)`;
   });
 });
