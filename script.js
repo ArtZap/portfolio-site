@@ -184,7 +184,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const rect = logo.getBoundingClientRect();
     const x = e.clientX - (rect.left + rect.width / 2);
     const y = e.clientY - (rect.top + rect.height / 2);
-    const angle = Math.atan2(x, y) * 180 / Math.PI;
+    const angle = Math.atan2(y, x) * 180 / Math.PI;
     logo.style.transform = `translate(-50%, -50%) rotate(${angle}deg)`;
   });
 });
