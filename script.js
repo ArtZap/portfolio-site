@@ -48,6 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
   /* 2 & 3 & 4. Форма обратной связи */
   const feedbackBtn = document.getElementById("open-feedback");
   const feedbackPopup = document.getElementById("feedback-popup");
+const feedbackForm = document.getElementById("feedback-form");
   const form = document.getElementById("feedback-form");
   const submitBtn = document.getElementById("submit-btn");
 
