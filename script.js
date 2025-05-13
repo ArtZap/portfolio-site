@@ -183,6 +183,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const logo = document.getElementById("animated-logo");
     const x = (e.clientX / window.innerWidth) * 30 - 15;
     const y = (e.clientY / window.innerHeight) * 30 - 15;
-    logo.style.transform = `translate(-50%, -50%) rotate(${x + y}deg)`;
+    logo.style.transform = `translate(-50%, -50%) rotate(${x - y}deg)`;
   });
 });
