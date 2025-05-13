@@ -181,10 +181,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   document.addEventListener("mousemove", (e) => {
     const logo = document.getElementById("animated-logo");
-    const rect = logo.getBoundingClientRect();
-    const x = e.clientX - (rect.left + rect.width / 2);
-    const y = e.clientY - (rect.top + rect.height / 2);
-    const angle = Math.atan2(y, x) * 180 / Math.PI;
-    logo.style.transform = `translate(-50%, -50%) rotate(${angle}deg)`;
+    const x = (e.clientX / window.innerWidth) * 30 - 15;
+    const y = (e.clientY / window.innerHeight) * 30 - 15;
+    logo.style.transform = `translate(-50%, -50%) rotate(${x + y}deg)`;
   });
 });
