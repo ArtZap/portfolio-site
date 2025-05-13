@@ -181,6 +181,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   document.addEventListener("mousemove", (e) => {
     const logo = document.getElementById("animated-logo");
+    const rect = logo.getBoundingClientRect();
     const x = e.clientX - (rect.left + rect.width / 2);
     const y = e.clientY - (rect.top + rect.height / 2);
     const angle = Math.atan2(x, y) * 180 / Math.PI;
