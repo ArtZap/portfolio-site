@@ -54,12 +54,19 @@ document.addEventListener("DOMContentLoaded", () => {
   feedbackBtn.addEventListener("click", () =>
     feedbackPopup.classList.add("active")
   );
+
   feedbackPopup
     .querySelector(".close-popup")
     .addEventListener("click", () => feedbackPopup.classList.remove("active"));
 
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && feedbackPopup.classList.contains("active")) {
+      feedbackPopup.classList.remove("active");
+    }
+  });
+
+  feedbackPopup.addEventListener("click", function (e) {
+    if (!feedbackForm.contains(e.target)) {
       feedbackPopup.classList.remove("active");
     }
   });
