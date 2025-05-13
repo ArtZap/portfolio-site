@@ -66,7 +66,7 @@ main>section {
 /* Шапка */
 header {
   background: #ee3124;
-  color: #fff;
+  color: #000;
   position: relative;
   width: 100%;
   z-index: 100;
@@ -438,6 +438,8 @@ nav a:hover {
   right: 10px;
   width: 80px;
   height: 80px;
+  transform-origin: center center;
+  transition: transform 0.1s ease-out;
 }
 
 /* ------------------------
