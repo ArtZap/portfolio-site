@@ -581,10 +581,9 @@ nav a:hover {
 }
 
 .prod-item img {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 20px;
-  object-fit: contain;
+  width: 60px;
+  height: auto;
+  margin-bottom: 10px;
 }
 
 .prod-item h4 {
@@ -650,8 +649,8 @@ nav a:hover {
 }
 
 .contact-info img {
-  width: 24px;
-  height: 24px;
+  width: 60px;
+  height: auto;
   margin-right: 15px;
 }
 
