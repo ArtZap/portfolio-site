@@ -162,26 +162,7 @@ nav a:hover {
   margin-top: 20px;
 }
 
-/* Контакты */
-.contact-info {
-  text-align: center;
-}
-
-.contact-info a {
-  color: #000;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.contact-info a:hover {
-  text-decoration: underline;
-}
-
-.contact-section {
-  text-align: center;
-}
-
-/* Контакты: кнопка обратной связи */
+/* кнопка обратной связи */
 #feedback-button {
   text-align: center;
   margin: 50px auto 0;
@@ -203,33 +184,8 @@ nav a:hover {
   background: #9c0a00;
 }
 
-/* Галерея */
-.gallery-section h2 {
-  color: #000;
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 30px;
-  justify-items: center;
-  align-items: center;
-}
-
-.gallery img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.gallery img:hover {
-  transform: scale(1.05);
-}
-
 /* Попапы */
-.popup,
-.promo {
+.popup {
   position: fixed;
   top: 0;
   left: 0;
@@ -245,77 +201,9 @@ nav a:hover {
   z-index: 9999;
 }
 
-.popup.active,
-.promo.active {
+.popup.active {
   opacity: 1;
   visibility: visible;
-}
-
-.promo-content {
-  background: #fff;
-  border-radius: 12px;
-  padding: 30px;
-  max-width: 90%;
-  width: 400px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-  text-align: center;
-}
-
-.promo-content h2 {
-  margin-bottom: 15px;
-  font-size: 1.5rem;
-  color: #ee3124;
-}
-
-.promo-content p {
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.promo-content ul {
-  text-align: left;
-  margin-bottom: 20px;
-}
-
-.promo-content li {
-  margin-bottom: 8px;
-}
-
-.close-promo {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: #999;
-  transition: color 0.2s;
-}
-
-.close-promo:hover {
-  color: #333;
-}
-
-.promo-btn {
-  padding: 12px 20px;
-  background: #ee3124;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.promo-btn:hover {
-  background: #c6281c;
-}
-
-.popup img {
-  max-width: 80%;
-  max-height: 80%;
-  border-radius: 8px;
 }
 
 .close-popup {
@@ -325,30 +213,6 @@ nav a:hover {
   font-size: 2rem;
   color: #fff;
   cursor: pointer;
-}
-
-.nav-arrow {
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 2rem;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 201;
-}
-
-.nav-arrow.left {
-  left: 20px;
-}
-
-.nav-arrow.right {
-  right: 20px;
-}
-
-.nav-arrow.hidden {
-  display: none;
 }
 
 /* Popup обратной связи */
@@ -398,37 +262,6 @@ nav a:hover {
 
 #submit-btn:hover:not(.sending):not(.success) {
   background: #c6281c;
-}
-
-/* Счетчик */
-#countdown {
-  position: relative;
-  text-align: center;
-  padding: 80px 20px;
-}
-
-#countdown::before {
-  content: '';
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 800px;
-  height: calc(100% - 40px);
-  background: rgba(238, 49, 36, 0.1);
-  border-radius: 8px;
-  z-index: -1;
-}
-
-#countdown h2 {
-  margin-bottom: 20px;
-  font-size: 1.8rem;
-  color: #000;
-}
-
-#timer {
-  font-size: 2.5rem;
-  color: #ee3124;
 }
 
 /* SVG-анимация */
@@ -500,12 +333,6 @@ nav a:hover {
     padding: 0 10px;
   }
 
-  /* сетка галереи в 2-колонки */
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-  }
-
   /* блок преимуществ — одна колонка */
   .features {
     flex-direction: column;
@@ -524,11 +351,6 @@ nav a:hover {
 
 /* совсем узкие экраны */
 @media (max-width: 480px) {
-
-  /* галерея в одну колонку */
-  .gallery {
-    grid-template-columns: 1fr;
-  }
 
   /* ещё чуть меньше заголовки */
   h2 {
