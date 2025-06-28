@@ -681,7 +681,7 @@ textarea {
   font-size: 16px;
 }
 
-.submit-btn {
+.submit-btn-form {
   background: #ee3124;
   color: white;
   border: none;
@@ -692,6 +692,6 @@ textarea {
   transition: background 0.3s;
 }
 
-.submit-btn:hover {
+.submit-btn-form:hover {
   background: #ee3124;
 }
