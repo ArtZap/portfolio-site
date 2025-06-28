@@ -17,7 +17,7 @@
             <li><a href="#why-us">Почему мы</a></li>
             <li><a href="#benefits">Выгоды СТМ</a></li>
             <li><a href="#products">Продукция</a></li>
-            <li><a href="#contact">Контакты</a></li>
+            <li><a href="#kontakt">Контакты</a></li>
           </ul>
         </nav>
       </div>
@@ -156,7 +156,7 @@
               </ul>
             </div>
             <div class="prod-item">
-              <img src="images/icon-sun.png" alt="Комарик/Солнце" />
+              <img src="images/icon-sunsun.png" alt="Комарик/Солнце" />
               <h4>Сезонная продукция</h4>
               <ul>
                 <li>Репелленты, солнцезащитная косметика</li>
@@ -183,26 +183,9 @@
       </div>
 
       <div class="contact-container">
-        <!-- Левая колонка - контактная информация -->
-        <div class="contact-info">
-          <h3>ООО «Рокет Фарм»</h3>
-          <div class="contact-detail">
-            <i class="icon-location"></i>
-            <p>115114, г. Москва, 2-й Кожевнический пер., 12, под. 13, оф. 2</p>
-          </div>
-          <div class="contact-detail">
-            <i class="icon-phone"></i>
-            <p>+7 (495) 298-11-19</p>
-          </div>
-          <div class="contact-detail">
-            <i class="icon-email"></i>
-            <p>info@rocket-pharm.ru</p>
-          </div>
-        </div>
-
-        <!-- Правая колонка - форма обратной связи -->
+        <!-- Левая колонка - форма обратной связи -->
         <div class="contact-form">
-          <form id="feedback-form">
+          <form id="feedback-form"  action="https://example.com/submit" method="POST">
             <div class="form-group">
               <input type="text" id="name" name="name" required
                 placeholder="Ваше имя">
@@ -223,23 +206,29 @@
           </form>
         </div>
       </div>
-    </div>
 
-    <!-- Контакты -->
-    <section id="contact" class="section-white">
-      <div class="container contact-info">
-        <h2>Контакты</h2>
-        <p>ООО «Рокет Фарм»<br>
-          129128, г. Москва, ул. Бажова, д. 18<br>
-          <a href="tel:+74952981119">+7 (495) 298-11-19</a><br>
-          <a href="mailto:info@rocket-pharm.ru">info@rocket-pharm.ru</a></p>
+      <!-- Правая колонка - контактная информация -->
+      <div class="contact-info">
+        <h3>ООО «Рокет Фарм»</h3>
+        <div class="contact-detail">
+          <img src="images/icon-location.png" alt="icon-location" />
+          <p>129128, г. Москва, ул. Бажова, д. 18</p>
+        </div>
+        <div class="contact-detail">
+          <img src="images/icon-phone.png" alt="icon-phone" />
+          <a href="tel:+74952981119">+7 (495) 298-11-19</a>
+        </div>
+        <div class="contact-detail">
+          <img src="images/icon-email.png" alt="icon-email" />
+          <a href="mailto:info@rocket-pharm.ru">info@rocket-pharm.ru</a>
+        </div>
       </div>
-    </section>
+    </div>
 
     <!-- Popup обратной связи -->
     <div id="feedback-popup" class="popup hidden">
       <span class="close-popup">&times;</span>
-      <form id="feedback-form" action="https://example.com/submit" method="POST"
+      <form id="feedback-form-popup" action="https://example.com/submit" method="POST"
         novalidate>
         <h2 class="visually-hidden">Форма обратной связи</h2>
         <h3>Оставьте сообщение</h3>

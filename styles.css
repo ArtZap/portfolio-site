@@ -67,7 +67,7 @@ main>section {
 header {
   background: #ee3124;
   color: #fff;
-  position: relative;
+  position: fixed;
   width: 100%;
   z-index: 100;
 }
@@ -357,7 +357,7 @@ nav a:hover {
   z-index: 200;
 }
 
-#feedback-form {
+#feedback-form-popup {
   background: #fff;
   padding: 30px;
   border-radius: 10px;
@@ -369,15 +369,15 @@ nav a:hover {
   gap: 15px;
 }
 
-#feedback-form label {
+#feedback-form-popup label {
   display: flex;
   flex-direction: column;
   font-size: 0.9rem;
   color: #ee3124;
 }
 
-#feedback-form input,
-#feedback-form textarea {
+#feedback-form-popup input,
+#feedback-form-popup textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -611,11 +611,11 @@ nav a:hover {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  
+
   .prod-item {
     padding: 20px 15px;
   }
-  
+
   .prod-item img {
     width: 60px;
     height: 60px;
@@ -637,7 +637,8 @@ nav a:hover {
   padding: 0 20px;
 }
 
-.contact-info, .contact-form {
+.contact-info,
+.contact-form {
   flex: 1;
   min-width: 300px;
 }
@@ -648,11 +649,10 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
-.icon-location, .icon-phone, .icon-email {
+.contact-info img {
   width: 24px;
   height: 24px;
   margin-right: 15px;
-  /* Добавьте иконки через background-image */
 }
 
 #contacts-header h2 {
@@ -673,7 +673,8 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ddd;
