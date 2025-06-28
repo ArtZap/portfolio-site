@@ -43,6 +43,80 @@ main>section {
   padding: 60px 0;
 }
 
+/* Стили секции контактов */
+#contacts-section {
+  padding: 60px 0;
+  background: #f9f9f9;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contact-info, .contact-form {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-detail {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.icon-location, .icon-phone, .icon-email {
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
+  /* Добавьте иконки через background-image */
+}
+
+#contacts-header h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.divider-line {
+  width: 60px;
+  height: 3px;
+  background: #0072bc;
+  margin: 0 auto 40px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.submit-btn {
+  background: #0072bc;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: #005999;
+}
+
 /* Секции */
 .section-white,
 .section-red,

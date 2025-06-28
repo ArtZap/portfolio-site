@@ -98,33 +98,132 @@
         </div>
       </section>
 
-      <!-- Галерея продукции -->
-      <section id="products" class="gallery-section">
+      <!-- Продукция -->
+      <section id="products" class="section-red">
         <div class="container">
-          <h2>Галерея продукции</h2>
-          <div class="gallery">
-            <img src="images/product-1.webp" alt="Продукт 1">
-            <img src="images/product-2.webp" alt="Продукт 2">
-            <img src="images/product-3.webp" alt="Продукт 3">
-            <img src="images/product-4.webp" alt="Продукт 4">
-            <img src="images/product-5.webp" alt="Продукт 5">
-            <img src="images/product-6.webp" alt="Продукт 6">
-            <img src="images/product-7.webp" alt="Продукт 7">
+          <h2>Продукция</h2>
+          <p>«РОКЕТ ФАРМ» предлагает только проверенную качественную продукцию
+            в наиболее востребованных категориях парафармацевтики:</p>
+          <div class="product-grid">
+            <div class="prod-item">
+              <img src="images/icon-carrot.png" alt="Морковь" />
+              <h4>БАД и здоровое питание</h4>
+              <ul>
+                <li>Витамины, ВМК, батончики мюсли, здоровые снеки</li>
+                <li>Витаминизированные леденцы и жвачки</li>
+                <li>Функциональные напитки, минеральные воды</li>
+              </ul>
+            </div>
+            <div class="prod-item">
+              <img src="images/icon-firstaid.png" alt="Аптечка" />
+              <h4>ИМН (изделия мед. назначения)</h4>
+              <ul>
+                <li>Расходные санитарные средства: маски, бахилы,
+                  перчатки</li>
+                <li>Перевязочные средства, пластыри, повязки</li>
+                <li>Уход за больными</li>
+              </ul>
+            </div>
+            <div class="prod-item">
+              <img src="images/icon-hygiene.png" alt="Руки-капля" />
+              <h4>Гигиенические товары</h4>
+              <ul>
+                <li>Влажные салфетки, ватные диски, палочки</li>
+                <li>Женская гигиена</li>
+              </ul>
+            </div>
+            <div class="prod-item">
+              <img src="images/icon-cosmetic.png" alt="Цветочек" />
+              <h4>Косметика</h4>
+              <ul>
+                <li>Шампуни, маски, крема, гели, мыла</li>
+                <li>Интимная косметика</li>
+              </ul>
+            </div>
+            <div class="prod-item">
+              <img src="images/icon-family.png" alt="Семья" />
+              <h4>Планирование семьи</h4>
+              <ul>
+                <li>Презервативы, тесты, лубриканты</li>
+              </ul>
+            </div>
+            <div class="prod-item">
+              <img src="images/icon-child.png" alt="Ребенок" />
+              <h4>Детские товары</h4>
+              <ul>
+                <li>Детская косметика, впитывающие пелёнки</li>
+                <li>Влажные салфетки, ватные изделия</li>
+              </ul>
+            </div>
+            <div class="prod-item">
+              <img src="images/icon-sun.png" alt="Комарик/Солнце" />
+              <h4>Сезонная продукция</h4>
+              <ul>
+                <li>Репелленты, солнцезащитная косметика</li>
+              </ul>
+            </div>
+          </div>
+          <div id="feedback-button" class="container">
+            <button id="open-feedback">Получить полный каталог
+              продукции</button>
           </div>
         </div>
       </section>
 
-      <!-- Счетчик -->
-      <section id="countdown">
-        <h2>До конца акции осталось:</h2>
-        <div id="timer">00:00:00:00</div>
-      </section>
-
-      <!-- Обратная связь -->
-      <div id="feedback-button" class="container">
-        <button id="open-feedback">Получить полный каталог продукции</button>
-      </div>
     </main>
+
+    <div class="clearfix colelem" id="contacts-section">
+      <!-- Якорь для навигации -->
+      <a class="anchor_item" id="kontakt"></a>
+
+      <!-- Заголовок секции -->
+      <div class="clearfix" id="contacts-header">
+        <h2>КОНТАКТЫ</h2>
+        <div class="divider-line"></div>
+      </div>
+
+      <div class="contact-container">
+        <!-- Левая колонка - контактная информация -->
+        <div class="contact-info">
+          <h3>ООО «Рокет Фарм»</h3>
+          <div class="contact-detail">
+            <i class="icon-location"></i>
+            <p>115114, г. Москва, 2-й Кожевнический пер., 12, под. 13, оф. 2</p>
+          </div>
+          <div class="contact-detail">
+            <i class="icon-phone"></i>
+            <p>+7 (495) 298-11-19</p>
+          </div>
+          <div class="contact-detail">
+            <i class="icon-email"></i>
+            <p>info@rocket-pharm.ru</p>
+          </div>
+        </div>
+
+        <!-- Правая колонка - форма обратной связи -->
+        <div class="contact-form">
+          <form id="feedback-form">
+            <div class="form-group">
+              <input type="text" id="name" name="name" required
+                placeholder="Ваше имя">
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" required
+                placeholder="E-mail">
+            </div>
+            <div class="form-group">
+              <input type="tel" id="phone" name="phone" required
+                placeholder="Телефон (обязательно)">
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" rows="4"
+                placeholder="Сообщение"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
 
     <!-- Контакты -->
     <section id="contact" class="section-white">
@@ -136,16 +235,6 @@
           <a href="mailto:info@rocket-pharm.ru">info@rocket-pharm.ru</a></p>
       </div>
     </section>
-
-    <!-- Popup для увеличения изображений -->
-    <div id="img-popup" class="popup hidden">
-      <span class="close-popup">&times;</span>
-      <button class="nav-arrow left">&#9664;</button>
-      <img
-        src="images/icon-rocket-new.png"
-        alt="Увеличенное изображение">
-      <button class="nav-arrow right">&#9654;</button>
-    </div>
 
     <!-- Popup обратной связи -->
     <div id="feedback-popup" class="popup hidden">
@@ -167,21 +256,6 @@
       <path id="rocket-path" d="M10,90 L50,10 L90,90 Z" stroke="#b30000"
         stroke-width="4" fill="none"></path>
     </svg>
-
-    <!-- Одноразовый таймер-подсказка -->
-    <div id="promo-popup" class="promo">
-      <div class="promo-content">
-        <button class="close-promo" aria-label="Закрыть окно">&times;</button>
-        <h2>Наши новые исследования</h2>
-        <p>Узнайте первыми о последних разработках Rocket Pharm:</p>
-        <ul>
-          <li>Нанотехнологичные капсулы нового поколения</li>
-          <li>Программа лояльности для партнёров</li>
-          <li>Специальные условия для первых 100 подписчиков</li>
-        </ul>
-        <button class="promo-btn" id="subscribe-btn">Подписаться</button>
-      </div>
-    </div>
 
     <script src="script.js"></script>
   </body>
