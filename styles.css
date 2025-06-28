@@ -636,7 +636,7 @@ nav a:hover {
   padding: 0 20px;
 }
 
-.contact-info,
+.contact-container,
 .contact-form {
   flex: 1;
   min-width: 300px;
