@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Nunito';
-  src: url('fonts/ofont.ru_Nunito.ttf') format('ttf');
+  src: url('fonts/ofont.ru_Nunito.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'NunitoBold';
-  src: url('fonts/ofont.ru_NunitoBold.ttf') format('ttf');
+  src: url('fonts/ofont.ru_NunitoBold.ttf') format('truetype');
 }
 
 /* Базовые стили */
