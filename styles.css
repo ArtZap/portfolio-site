@@ -27,7 +27,7 @@ body {
 }
 
 body {
-  font-family: Nunito, sans-serif;
+  font-family: NunitoBold, sans-serif;
   font-size: 1.5;
   line-height: 1.6;
   background: #fff;
@@ -72,10 +72,13 @@ main>section {
 
 .section-red {
   background: rgba(179, 0, 0, 0.05);
+}
+
+.section-logo {
   background-image: url(images/pharm_background.jpg);
   background-repeat: repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 0;
 }
 
 /* Шапка */
@@ -101,14 +104,11 @@ header.fixed.visible {
   transform: translateY(0);
 }
 
-h1 {
-  font-family: NunitoBold, sans-serif;
-}
-
 header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 30px 10px;
 }
 
 nav ul {
@@ -477,12 +477,13 @@ nav a:hover {
 .contact-form {
   flex: 1;
   min-width: 300px;
+  margin-bottom: 20px;
 }
 
 .contact-detail {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 20px;
+  justify-content: center;
 }
 
 .contact-info img {
