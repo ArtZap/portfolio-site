@@ -90,8 +90,9 @@ header {
   z-index: 100;
 }
 
-header img {
+.site-logo {
   height: 70px;
+  width: auto;
 }
 
 header.fixed {
