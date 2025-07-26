@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Nunito';
+  src: url('fonts/ofont.ru_Nunito.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'NunitoBold';
+  src: url('fonts/ofont.ru_NunitoBold.ttf') format('ttf');
+}
+
 /* Базовые стили */
 *,
 html {
@@ -17,7 +27,8 @@ body {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Nunito, sans-serif;
+  font-size: 1.5;
   line-height: 1.6;
   background: #fff;
 }
@@ -84,6 +95,10 @@ header.fixed {
 
 header.fixed.visible {
   transform: translateY(0);
+}
+
+h1 {
+  font-family: NunitoBold, sans-serif;
 }
 
 header .container {
@@ -383,8 +398,8 @@ nav a:hover {
 }
 
 .prod-item {
-  width: 370px;
-  height: 270px;
+  width: 350px;
+  height: 250px;
   background: white;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
