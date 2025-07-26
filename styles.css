@@ -90,6 +90,10 @@ header {
   z-index: 100;
 }
 
+header img {
+  height: 30px;
+}
+
 header.fixed {
   position: fixed;
   top: 0;
