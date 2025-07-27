@@ -83,7 +83,6 @@ main>section {
 
 /* Шапка */
 header {
-  height: 70px;
   background: #131212;
   color: #fff;
   position: fixed;
@@ -115,7 +114,7 @@ header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px 0;
+  padding: 10px 20px;
 }
 
 nav ul {
