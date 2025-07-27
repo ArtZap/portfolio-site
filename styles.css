@@ -93,10 +93,6 @@ header {
 .head-logo {
   height: 70px;
   width: auto;
-  background-image: url(images/head_logo.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 header.fixed {
