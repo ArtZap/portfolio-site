@@ -28,7 +28,7 @@ body {
 
 body {
   font-family: NunitoBold, sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.6;
   background: #fff;
 }
@@ -88,7 +88,7 @@ header {
   position: fixed;
   width: 100%;
   z-index: 100;
-  font-size: 32px;
+  font-size: 20px;
 }
 
 .head-logo {
