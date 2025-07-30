@@ -338,6 +338,10 @@ nav a:hover {
     cursor: pointer;
     display: block;
   }
+  
+  #main-nav.active::before {
+    content: "✕";
+  }
 
   /* героя и текст уменьшаем */
   #title_text {

@@ -1,4 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.getElementById("main-nav");
+  const navMenu = document.querySelector("nav ul");
+
+  hamburger.addEventListener("click", function () {
+    navMenu.classList.toggle("open");
+    hamburger.classList.toggle("active");
+  });
+
   /* 2 & 3 & 4. Форма обратной связи */
   const feedbackBtn = document.getElementById("open-feedback");
   const feedbackPopup = document.getElementById("feedback-popup");
