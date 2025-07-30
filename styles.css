@@ -149,14 +149,6 @@ nav a:hover {
   padding: 0 0 260px 0;
 }
 
-.hero-content {
-  display: flex;
-  color: #fff;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
 /* Блоки преимуществ */
 .features {
   display: flex;
