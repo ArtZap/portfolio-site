@@ -489,9 +489,13 @@ nav a:hover {
   padding-bottom: 20px;
 }
 
+.contact-info p {
+  margin-bottom: 0;
+}
+
 .contact-info img {
-  height: 30px;
-  width: auto;
+  width: 30px;
+  height: auto;
   margin-right: 15px;
 }
 
