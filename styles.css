@@ -338,7 +338,7 @@ nav a:hover {
     cursor: pointer;
     display: block;
   }
-  
+
   #main-nav.active::before {
     content: "✕";
   }
@@ -490,8 +490,8 @@ nav a:hover {
 }
 
 .contact-info img {
-  width: 30px;
-  height: auto;
+  height: 30px;
+  width: auto;
   margin-right: 15px;
 }
 
