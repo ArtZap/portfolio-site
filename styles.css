@@ -84,7 +84,7 @@ main>section {
 
 /* Шапка */
 header {
-  background: black;
+  background: #ee3124;
   color: #fff;
   position: fixed;
   width: 100%;
@@ -308,6 +308,10 @@ nav a:hover {
   #hero {
     padding-bottom: 200px;
   }
+
+  header {
+    font-size: 16px;
+  }
 }
 
 /* мобильные экраны */
@@ -362,6 +366,10 @@ nav a:hover {
   #open-feedback {
     width: 100%;
     box-sizing: border-box;
+  }
+
+  header {
+    font-size: 14px;
   }
 }
 
