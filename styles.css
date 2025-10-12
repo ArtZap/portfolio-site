@@ -67,7 +67,6 @@ main>section {
   scroll-margin-top: 50px;
 }
 
-
 h2{
   font-size: 32px;
 }
@@ -93,7 +92,7 @@ p{
 
 /* Шапка */
 header {
-  background: #4400ff;
+  background: #ffd000;
   color: #fff;
   position: fixed;
   width: 100%;
@@ -167,12 +166,12 @@ nav a:hover {
 }
 
 .feature-item {
-  max-width: 250px;
+  max-width: 350px;
   text-align: center;
 }
 
 .feature-item img {
-  width: 60px;
+  width: 100px;
   height: auto;
   margin-bottom: 10px;
 }
