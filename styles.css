@@ -85,7 +85,7 @@ main>section {
 
 /* Шапка */
 header {
-  background: #ee3124;
+  background: #24eeeb;
   color: #fff;
   position: fixed;
   width: 100%;
@@ -412,7 +412,7 @@ nav a:hover {
 }
 
 .prod-item {
-  width: 350px;
+  width: 500px;
   height: 300px;
   background: white;
   border-radius: 12px;
