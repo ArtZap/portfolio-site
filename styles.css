@@ -391,7 +391,6 @@ nav a:hover {
 }
 
 #products h2 {
-  font-size: 28px;
   color: #000;
   margin-bottom: 20px;
 }
@@ -401,7 +400,6 @@ nav a:hover {
   max-width: 800px;
   margin: 0 auto 40px;
   color: #333;
-  font-size: 20px;
 }
 
 .product-grid {
