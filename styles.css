@@ -67,14 +67,6 @@ main>section {
   scroll-margin-top: 50px;
 }
 
-h2{
-  font-size: 32px;
-}
-
-p{
-  font-size: 24px;
-}
-
 .section-white {
   background: #fff;
 }
@@ -92,7 +84,7 @@ p{
 
 /* Шапка */
 header {
-  background: #ffd000;
+  background: #ee3124;
   color: #fff;
   position: fixed;
   width: 100%;
@@ -171,7 +163,7 @@ nav a:hover {
 }
 
 .feature-item img {
-  width: 100px;
+  width: 80px;
   height: auto;
   margin-bottom: 10px;
 }
@@ -445,7 +437,7 @@ nav a:hover {
 
 .prod-item h4 {
   color: #ee3124;
-  font-size: 20px;
+  font-size: 24px;
   margin-bottom: 15px;
 }
 
