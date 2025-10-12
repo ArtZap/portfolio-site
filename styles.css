@@ -231,6 +231,7 @@ nav a:hover {
 #feedback-popup {
   background: rgba(0, 0, 0, 0.6);
   z-index: 200;
+  font-size: 20px;
 }
 
 #feedback-form-popup {
@@ -248,7 +249,7 @@ nav a:hover {
 #feedback-form-popup label {
   display: flex;
   flex-direction: column;
-  font-size: 0.9rem;
+  font-size: 22px;
   color: #ee3124;
 }
 
@@ -258,7 +259,6 @@ nav a:hover {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 6px;
-  font-size: 1rem;
 }
 
 #submit-btn {
@@ -267,8 +267,8 @@ nav a:hover {
   border-radius: 6px;
   background: #ee3124;
   color: #fff;
+  font-size: 22px;
   cursor: pointer;
-  font-size: 1rem;
   transition: background .3s;
 }
 
