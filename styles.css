@@ -27,7 +27,7 @@ body {
 }
 
 body {
-  font-family: NunitoBold, sans-serif;
+  font-family: Nunito, sans-serif;
   font-size: 24px;
   line-height: 1.6;
   background: #fff;
@@ -93,12 +93,12 @@ p{
 
 /* Шапка */
 header {
-  background: #000000;
+  background: #4400ff;
   color: #fff;
   position: fixed;
   width: 100%;
   z-index: 100;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .head-logo {
