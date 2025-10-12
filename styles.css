@@ -68,6 +68,10 @@ main>section {
   scroll-margin-top: 50px;
 }
 
+#benefits {
+  padding: 80px 0;
+}
+
 .section-white {
   background: #fff;
 }
