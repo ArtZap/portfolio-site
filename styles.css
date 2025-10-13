@@ -90,7 +90,7 @@ main>section {
 /* Шапка */
 header {
   /* background: #ee3124;  */
-  background: #ee3124; 
+  background: #3124ee; 
   color: #fff;
   position: fixed;
   width: 100%;
@@ -159,7 +159,7 @@ nav a:hover {
 .features {
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 70px;
   justify-content: center;
 }
 
