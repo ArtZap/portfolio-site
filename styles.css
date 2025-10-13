@@ -89,7 +89,8 @@ main>section {
 
 /* Шапка */
 header {
-  background: #24ee7f;
+  /* background: #ee3124;  */
+  background: #ee3124; 
   color: #fff;
   position: fixed;
   width: 100%;
