@@ -68,6 +68,10 @@ main>section {
   scroll-margin-top: 50px;
 }
 
+#about .container{
+  max-width: 1200px;
+}
+
 #benefits {
   padding: 100px 0;
 }
@@ -90,7 +94,7 @@ main>section {
 /* Шапка */
 header {
   /* background: #ee3124;  */
-  background: #ee3124; 
+  background: #42ee24; 
   color: #fff;
   position: fixed;
   width: 100%;
@@ -121,7 +125,7 @@ header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 20px;
+  padding: 15px 40px 15px 20px;
 }
 
 nav ul {
