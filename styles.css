@@ -417,8 +417,8 @@ nav a:hover {
 }
 
 .prod-item {
-  flex: 0 0 450px;
-  height: 350px;
+  flex: 0 0 400px;
+  height: 400px;
   background: white;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
