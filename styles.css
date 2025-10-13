@@ -421,7 +421,7 @@ nav a:hover {
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   padding: 30px 25px;
-  margin: auto;
+  margin: 20px 40px;
   font-size: 20px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
