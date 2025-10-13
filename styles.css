@@ -450,8 +450,8 @@ nav a:hover {
 }
 
 .prod-item ul {
-  text-align: center;
-  padding-left: 20px;
+  text-align: left;
+  padding-left: 30px;
 }
 
 .prod-item li {
