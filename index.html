@@ -1,242 +1,136 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rocket Pharm</title>
-    <link rel="icon" href="images/site_icon.png" type="image/png">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Артем Запорожец — Репетитор и Программист</title>
+    <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Inter", Arial, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #e2e8f0;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+      min-height: 100vh;
+    }
+    header {
+      text-align: center;
+      margin-top: 2rem;
+      animation: fadeIn 1s ease;
+    }
+    h1 {
+      font-size: 2.6rem;
+      font-weight: 700;
+      color: #f8fafc;
+    }
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 0.8rem;
+      color: #38bdf8;
+    }
+    p { max-width: 700px; margin: 0.5rem auto; }
+    section {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      padding: 2rem;
+      margin: 2rem 0;
+      max-width: 800px;
+      width: 100%;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      backdrop-filter: blur(10px);
+      transition: transform 0.3s, box-shadow 0.3s;
+      animation: fadeUp 1s ease;
+    }
+    section:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 25px rgba(0,0,0,0.3);
+    }
+    ul { list-style: none; margin-top: 1rem; }
+    li::before {
+      content: "• ";
+      color: #38bdf8;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #94a3b8;
+      margin-top: auto;
+      padding: 1rem 0;
+    }
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    a:hover { text-decoration: underline; }
+    @media (max-width: 600px) {
+      h1 { font-size: 1.9rem; }
+      h2 { font-size: 1.3rem; }
+      section { padding: 1.5rem; }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
   </head>
   <body>
-    <header id="site-header">
-      <div class="container">
-        <img src="images/head_logo.png" alt="Rocket Pharm" class="head-logo">
-        <nav id="main-nav">
-          <ul>
-            <li><a href="#about">О компании</a></li>
-            <li><a href="#why-us">Почему мы</a></li>
-            <li><a href="#benefits">Выгоды СТМ</a></li>
-            <li><a href="#products">Продукция</a></li>
-            <li><a href="#kontakt">Контакты</a></li>
-          </ul>
-        </nav>
-      </div>
+
+    <header>
+      <h1>Артем Запорожец</h1>
+      <p>Студент МФТИ (ВШПИ — Высшая школа программной инженерии)</p>
+      <p>Репетитор и программист</p>
     </header>
 
-    <main>
-      <!-- Геро-секция -->
-      <div id="hero">
-      </div>
+    <section>
+      <h2>Обо мне</h2>
+      <p>
+        Я занимаюсь репетиторством более 2 лет. Моя главная цель —
+        заинтересовать ученика предметом через нестандартные задания.
+        Объясняю материал просто, понятно и с упором на практику.
+      </p>
+    </section>
 
-      <!-- О компании -->
-      <section id="about" class="section-white">
-        <div class="container">
-          <h2>О компании</h2>
-          <p>ООО «РОКЕТ ФАРМ» с 2016 года предоставляет ведущую экспертизу в
-            области создания, продвижения и продажи высоко-маржинальных товаров
-            (ВМТ) и собственных торговых марок (СТМ) на фармацевтическом
-            рынке.</p>
-          <p>Мы сотрудничаем с основными крупными контрактными площадками и
-            производителями аптечного ассортимента и предлагаем готовый
-            сбалансированный ассортимент СТМ и ВМТ любой региональной аптечной
-            сети, оптовику, дистрибьютору.</p>
-          <p>Наша продукция – только лидеры товарных категорий, проверенные
-            временем и большой выборкой, продукция с высокой наценкой и
-            оборачиваемостью. Без избыточного ассортимента, без обязательств по
-            объёмам, без отложенных ретро‑бонусов.</p>
-        </div>
-      </section>
+    <section>
+      <h2>Предметы и направления</h2>
+      <ul>
+        <li>Математика (школьная, олимпиадная, ВУЗ)</li>
+        <li>Физика (подготовка к экзаменам, углублённые темы)</li>
+        <li>Информатика (ОГЭ, ЕГЭ, олимпиадная подготовка)</li>
+        <li>Программирование (C++, Python, алгоритмы, проекты)</li>
+      </ul>
+    </section>
 
-      <!-- Почему мы -->
-      <section id="why-us" class="section-logo">
-        <div class="container">
-          <h2>Почему мы</h2>
-          <div class="features">
-            <div class="feature-item">
-              <img src="images/icon-owl.png" alt="Сова">
-              <p>Уникальная экспертиза в основных товарных категориях
-                парафармацевтики</p>
-            </div>
-            <div class="feature-item">
-              <img src="images/icon-piggy.png" alt="Свинья-копилка">
-              <p>Лучшие цены на рынке и только нужный ассортимент</p>
-            </div>
-            <div class="feature-item">
-              <img src="images/icon-compass.png" alt="Часы/Компас">
-              <p>Работаем оперативно, гибко, точно</p>
-            </div>
-          </div>
-          <p class="tagline">«Мы знаем об СТМ всё!.. и даже немного
-            больше.<br>Доверяйте профессионалам.»</p>
-        </div>
-      </section>
+    <section>
+      <h2>Что я предлагаю</h2>
+      <ul>
+        <li>Индивидуальные онлайн-занятия</li>
+        <li>Подготовка к экзаменам и контрольным</li>
+        <li>Решение задач, лабораторных, курсовых и проектов</li>
+        <li>Разовые консультации и помощь в изучении программирования</li>
+      </ul>
+    </section>
 
-      <!-- Выгоды СТМ -->
-      <section id="benefits" class="section-white">
-        <div class="container">
-          <h2>Выгоды СТМ</h2>
-          <div class="features">
-            <div class="feature-item">
-              <img src="images/icon-lamp.png" alt="Лампа-доллар">
-              <p>Зарабатывайте 150%...200%...300% при справедливой розничной
-                цене</p>
-            </div>
-            <div class="feature-item">
-              <img src="images/icon-rock.png" alt="Рок-пальцы">
-              <p>Зарабатывайте сразу, не ждёте ретро‑бонусов. Теперь вы сами
-                производитель!</p>
-            </div>
-            <div class="feature-item">
-              <img src="images/icon-rocket-new.png" alt="Ракета">
-              <p>Эксклюзивная продукция, уникальное отличие от конкурентов</p>
-            </div>
-          </div>
-        </div>
-      </section>
+    <section>
+      <h2>Контакты</h2>
+      <p>Свяжитесь со мной, чтобы обсудить обучение или заказ:</p>
+      <p>
+        📧 <a href="mailto:wiseacre67@gmail.com">wiseacre67@gmail.com</a><br />
+        💬 Telegram: <a href="https://t.me/prog_obsess">@prog_obsess</a>
+      </p>
+    </section>
 
-      <!-- Продукция -->
-      <section id="products" class="section-red">
-        <div class="container">
-          <h2>Продукция</h2>
-          <p>«РОКЕТ ФАРМ» предлагает только проверенную качественную продукцию
-            в наиболее востребованных категориях парафармацевтики:</p>
-          <div class="product-grid">
-            <div class="prod-item">
-              <img src="images/icon-carrot.png" alt="Морковь">
-              <h4>БАД и здоровое питание</h4>
-              <ul>
-                <li>Витамины, ВМК, батончики мюсли, здоровые снеки</li>
-                <li>Витаминизированные леденцы и жвачки</li>
-              </ul>
-            </div>
-            <div class="prod-item">
-              <img src="images/icon-firstaid.png" alt="Аптечка">
-              <h4>ИМН (изделия мед. назначения)</h4>
-              <ul>
-                <li>Расходные санитарные средства</li>
-                <li>Перевязочные средства, пластыри, повязки</li>
-                <li>Уход за больными</li>
-              </ul>
-            </div>
-            <div class="prod-item">
-              <img src="images/icon-hygiene.png" alt="Руки-капля">
-              <h4>Гигиенические товары</h4>
-              <ul>
-                <li>Влажные салфетки, ватные диски, палочки</li>
-                <li>Женская гигиена</li>
-              </ul>
-            </div>
-            <div class="prod-item">
-              <img src="images/icon-cosmetic.png" alt="Цветочек">
-              <h4>Косметика</h4>
-              <ul>
-                <li>Шампуни, маски, крема, гели, мыла</li>
-                <li>Интимная косметика</li>
-                <li>Репелленты, солнцезащитная косметика</li>
-              </ul>
-            </div>
-            <div class="prod-item">
-              <img src="images/icon-family.png" alt="Семья">
-              <h4>Планирование семьи</h4>
-              <ul>
-                <li>Презервативы, тесты, лубриканты</li>
-              </ul>
-            </div>
-            <div class="prod-item">
-              <img src="images/icon-child.png" alt="Ребенок">
-              <h4>Детские товары</h4>
-              <ul>
-                <li>Детская косметика, впитывающие пелёнки</li>
-                <li>Влажные салфетки, ватные изделия</li>
-              </ul>
-            </div>
-          </div>
-          <div id="feedback-button" class="container">
-            <button id="open-feedback">Получить полный каталог
-              продукции</button>
-          </div>
-        </div>
-      </section>
+    <footer>
+      © 2025 Артем Запорожец — Репетитор и Программист
+    </footer>
 
-    </main>
-
-    <div class="clearfix colelem" id="contacts-section">
-      <!-- Якорь для навигации -->
-      <a class="anchor_item" id="kontakt"></a>
-
-      <!-- Заголовок секции -->
-      <div class="clearfix" id="contacts-header">
-        <h2>КОНТАКТЫ</h2>
-        <div class="divider-line"></div>
-      </div>
-
-      <div class="contact-container">
-        <!-- Левая колонка - форма обратной связи -->
-        <div class="contact-form">
-          <form id="feedback-form" action="https://example.com/submit"
-            method="POST">
-            <div class="form-group">
-              <input type="text" id="name" name="name" required
-                placeholder="Ваше имя">
-            </div>
-            <div class="form-group">
-              <input type="email" id="email" name="email" required
-                placeholder="E-mail">
-            </div>
-            <div class="form-group">
-              <input type="tel" id="phone" name="phone" required
-                placeholder="Телефон (обязательно)">
-            </div>
-            <div class="form-group">
-              <textarea id="message" name="message" rows="4"
-                placeholder="Сообщение"></textarea>
-            </div>
-            <button type="submit" class="submit-btn-form">Отправить</button>
-          </form>
-        </div>
-
-        <!-- Правая колонка - контактная информация -->
-        <div class="contact-info">
-          <div class="contact-detail">
-            <h3>ООО «Рокет Фарм»</h3>
-          </div>
-          <div class="contact-detail">
-            <img src="images/icon-location.png" alt="icon-location">
-            <p>129128, г. Москва, ул. Бажова, д. 18</p>
-          </div>
-          <div class="contact-detail">
-            <img src="images/icon-phone.png" alt="icon-phone">
-            <a href="tel:+74952981119">+7 (495) 298-11-19</a>
-          </div>
-          <div class="contact-detail">
-            <img src="images/icon-email.png" alt="icon-email">
-            <a href="mailto:info@rocket-pharm.ru">info@rocket-pharm.ru</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Popup обратной связи -->
-    <div id="feedback-popup" class="popup hidden">
-      <span class="close-popup">&times;</span>
-      <form id="feedback-form-popup" action="https://example.com/submit"
-        method="POST"
-        novalidate>
-        <h3>Оставьте сообщение</h3>
-        <label>Имя:<input type="text" name="name" required></label>
-        <label>Телефон:<input type="text" name="phone" required></label>
-        <label>Email:<input type="email" name="email" required></label>
-        <label>Сообщение:<textarea name="message" required></textarea></label>
-        <button type="submit" id="submit-btn">Отправить</button>
-      </form>
-    </div>
-
-    <!-- SVG-элемент для анимации -->
-    <svg id="animated-logo" width="100" height="100" viewBox="0 0 100 100">
-      <path id="rocket-path" d="M10,90 L50,10 L90,90 Z" stroke="#b30000"
-        stroke-width="4" fill="none"></path>
-    </svg>
-
-    <script src="script.js"></script>
   </body>
 </html>
